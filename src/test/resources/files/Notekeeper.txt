@@ -1,0 +1,108 @@
+GROUPS: These are like tags but more standardardized, ex: accurev, database
+TAGS: These are key words to search for when looking to find this information
+IMPORTANT: Include this tag if it's an often used item
+DESCRIPTION: 
+
+
+#######################################################################
+GROUPS: COMMAND
+TAGS: APPLICATION command line config environment env
+DESCRIPTION: Use this command to show all the variables that are set when the application runs
+
+runTaskDiff.sh -l
+
+-   This is show definitions used while running 
+
+
+
+#######################################################################
+GROUPS: debug
+TAGS: firebug debugging UI IE internet explorer css 
+DESCRIPTION: how to get firebug in IE
+
+Copy line below into jsp
+<!-- -->  <script type="text/javascript" src="http://getfirebug.com/releases/lite/1.3/firebug-lite.js"></script>
+
+#######################################################################
+GROUPS: eclipse
+TAGS: ecliple memory permsize maxperm
+DESCRIPTION: If you get out of memory problem when running in eclipse add this.
+
+ -XX:MaxPermSize=128M
+
+
+#######################################################################
+GROUPS: password
+TAGS: password encryption sha sha256
+DESCRIPTION: How to encrypt a password from the command line
+
+echo -n <PASSWORD_TO_ENCRYPT> | sha256sum
+also 
+echo -n <PASSWORD_TO_ENCRYPT> | sha1sum
+
+#######################################################################
+GROUPS: linux find search
+TAGS: grep search
+DESCRIPTION: How to recursevly grep
+EXAMPLE: 
+
+find . -exec grep -H -n 'text' {} \;
+
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+
+#######################################################################
+GROUPS: 
+TAGS: 
+DESCRIPTION: 
+EXAMPLE: 
+
+

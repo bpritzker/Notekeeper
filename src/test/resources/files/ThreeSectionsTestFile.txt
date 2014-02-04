@@ -1,0 +1,35 @@
+GROUPS: These are like tags but more standardardized, ex: accurev, database
+TAGS: These are key words to search for when looking to find this information
+IMPORTANT: Include this tag if it's an often used item
+CAUSED BY: what can cause the problem
+DESCRIPTION: 
+
+
+#######################################################################
+GROUPING: accurev issus
+TAGS: "issue creation" issue accurev 
+
+When creating a new issue:
+
+
+
+#######################################################################
+
+TAGS: "make a code coverage change" accurev code coverage issue tracking perl scripts pl
+1)  Update test files.  you should have ALL methods/paths covered except exceptions
+2)  Use the accurevTrackingIssue.pl script to create a new issue 
+	ex: accurevTrackingIssue.pl 15127
+3)  Add changes to devel stream
+	note: Since NO QA is needed for unit testing, just promote up to first stream where there is nightly build (usuall in-test)
+
+
+NOTE: tools "developer tools"
+tools are found in: /usr/local/litle-home/linuser1/cvs/vap/developmentTools
+#######################################################################
+
+#######################################################################
+
+#######################################################################
+
+#######################################################################
+

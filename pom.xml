@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <!-- *********************************************************************************************** -->
+  <!-- *********************************************************************************************** -->
+  <!--  TO build in eclipse.... create a new Maven run configuration with the Goal "assembly:assembly" -->
+  <!-- *********************************************************************************************** -->
+  <!-- *********************************************************************************************** -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.benp.notekeeper</groupId>
+  <artifactId>Notekeeper</artifactId>
+  <version>0.1.4-SNAPSHOT</version>
+  <name>Notekeeper</name>
+  <description>Keep It Simple Program for Note Keeping.</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.commons</groupId>
+  		<artifactId>commons-lang3</artifactId>
+  		<version>3.1</version>
+  	</dependency>
+    <!--  Begin testing dependencies -->
+	<dependency>
+	  <groupId>org.mockito</groupId>
+	  <artifactId>mockito-all</artifactId>
+	  <version>1.9.5</version>
+	  <scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+        <scope>test</scope>
+	</dependency>
+  </dependencies>
+  <build>
+  	<plugins>
+  	    <plugin>
+	        <artifactId>maven-assembly-plugin</artifactId>
+	        <version>2.4</version>
+	        <configuration>
+	        <appendAssemblyId>false</appendAssemblyId> <!-- This will remove the "-project" on the dir name -->
+	          <descriptors>
+	            <descriptor>src/assemble/assembly.xml</descriptor>
+	          </descriptors>
+	        </configuration>
+      </plugin>	
+  	</plugins>
+  </build>
+</project>
